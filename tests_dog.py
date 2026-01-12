@@ -9,14 +9,14 @@ def test_polymorphism():
     assert isinstance(husky, Dogs)
     assert isinstance(husky, WorkingDogs)
 
-
+ #testing thar the Super function is working
 def test_inherited_methods():
     collie = BorderCollie(2, "Male", "Ace", 9)
 
     assert collie.walk() == "Ace is walking."
     assert collie.herd() == "Ace is herding."
 
-
+# testinf the variadic function
 def test_variadic_function_and_list():
     dog1 = BorderCollie(1, "Female", "Luna", 8)
     dog2 = SiberianHusky(4, "Male", "Thor", True)
